@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import React from "react";
 import { useForm } from "react-hook-form";
 
 const Form = () => {
@@ -6,15 +6,7 @@ const Form = () => {
   const onSubmit = data => {
     console.log(data);
   };
-  const [inputValues, setInputValues] = useReducer(
-    (state, newState) => ({ ...state, ...newState }),
-    { firstName: "", lastName: "" }
-  );
 
-  const handleOnChange = event => {
-    const { name, value } = event.target;
-    setInputValues({ [name]: value });
-  };
   return (
     <form
       className="lead-gen__form lead-gen--box-shadow"
