@@ -17,7 +17,10 @@ body {
  .container {
    display: flex;
    height: 100vh;
-   @media only screen and (min-width: 600px){
+   flex-direction: column;
+   align-items: center;
+   @media only screen and (min-width: 768px){
+     flex-direction: row;
     justify-content: center;
     align-items: center;
    }
@@ -25,24 +28,39 @@ body {
 
  .sales-copy {
    &__container {
-    @media only screen and (min-width: 600px){
+    width: 90vw; 
+    text-align: center;
+    @media only screen and (min-width: 768px){
+      text-align: left;
       width: 40vw;  
+      height: 80vh;
       padding-left: 2em;
       padding-right: 2em;
+      // justify-content: center;
+      
+      display: flex;
+      flex-direction: column;
     }
    }
 
    &__header {
-    @media only screen and (min-width: 600px){
-      color: white;
+     margin-top: 6em;
+    color: white;
+    font-size:2.8em;
+    font-weight: 600;
+
+    @media only screen and (min-width: 768px){
       font-size: 5em;
       font-weight: bold;
     }
    }
 
    &__paragraph {
-    @media only screen and (min-width: 600px){
-      color: white;
+    color: white;
+    font-size: 1.6em;
+    font-weight: 300;
+    line-height: 30px;
+    @media only screen and (min-width: 768px){
       font-size: 1.6em;
       line-height: 1.8em;
       font-weight: 300;
@@ -56,7 +74,10 @@ body {
    &__container {
     display: flex;
     flex-direction: column;
-    width: 35vw;
+    width: 85vw;
+    @media only screen and (min-width: 768px){
+      width: 35vw;
+    }
    }
 
    &__form {
@@ -72,14 +93,22 @@ body {
     justify-content: center;
     margin-bottom: 2em;
     font-size: 1.6em;
+    
+    
     background-color: hsl(248, 32%, 49%);
     color: white;
     border-radius: 10px;
     padding: 0.35em;
     box-shadow: 0px 8px #5430304f;
+    text-align: center;
+
 
     &--font-weight-200 {
       font-weight: 200;
+    }
+
+    @media only screen and (min-width: 768px){
+      // text
     }
    }
 
@@ -117,7 +146,7 @@ body {
      border-radius: 5px;
      height: 4em;
      color:#747474;
-     padding-left: 3em;
+     padding-left: 2em;
      font-weight: bold;
      font-size: 1.3em;
      font-weight: 600;
@@ -125,6 +154,11 @@ body {
      &:hover {
       border: solid hsl(248, 32%, 49%) 1px;
      }
+
+     @media only screen and (min-width: 768px){
+      // text
+      padding-left: 3em;
+    }
    }
 
    &__small-print {
@@ -133,31 +167,21 @@ body {
      justify-content: center;
      color: hsl(246, 25%, 77%);
      font-weight: 500;
+
+     flex-flow: column;
+     text-align: center;
+
      &--important {
        font-weight: bold;
        color: hsl(0, 100%, 74%) ;
      }
 
-     
+     @media only screen and (min-width: 768px){
+      // text
+    }
    }
 
    &--box-shadow {
     box-shadow: 0px 8px #5430304f;
    }
  }
-
-
-
-
-
-
-
-
- /*
-  11.089em (110)
-  6.854em (68)
-  4.236em (42px) 
-  2.618em (26px)
-  1.618em (16)
-  1em (10)
- */
