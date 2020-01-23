@@ -17,10 +17,12 @@ const Main = () => (
 
       <div className="lead-gen__container">
         <div className="lead-gen__offer">
-          <p>Try it free 7 days then $20/mo. thereafter</p>
+          <p className="lead-gen__offer--font-weight-200">
+            <strong>Try it free 7 days</strong> then $20/mo. thereafter
+          </p>
         </div>
 
-        <form className="lead-gen__form" action="" method="post">
+        <form className="lead-gen__form lead-gen--box-shadow" action="" method="post">
           <input className="lead-gen__input" type="text" name="firstname" value="First Name"/>
           <input className="lead-gen__input" type="text" name="lastname" value="Last Name"/>
           <input className="lead-gen__input" type="text" name="email" value="Email Address"/>
@@ -28,13 +30,11 @@ const Main = () => (
 
 
           <div className="lead-gen__btn">
-            CLAIM YOUR FREE TRIAL
+            <span className="lead-gen__btn--text-size-16">CLAIM YOUR FREE TRIAL</span> 
           </div>
 
           <p className="lead-gen__small-print">
-            <small>
               By clicking the button you are agreeing to our <span className="lead-gen__small-print--important">Terms and Services</span>
-            </small>
           </p>
         </form>  
       </div>
