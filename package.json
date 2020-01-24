@@ -5,6 +5,10 @@
     "build": "next build",
     "start": "next start"
   },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%"
+  ],
   "dependencies": {
     "@types/node-sass": "^4.11.0",
     "@zeit/next-sass": "^1.0.1",
