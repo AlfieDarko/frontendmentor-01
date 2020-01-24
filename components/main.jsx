@@ -1,6 +1,4 @@
 import React, { PureComponent } from "react";
-import "normalize.css";
-import "../styles/main.scss";
 import Form from "./form";
 import Copy from "./copy";
 import { COPY_PARAGRAPH, COPY_HEADER } from "./locales/en";
