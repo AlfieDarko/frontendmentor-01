@@ -115,7 +115,6 @@ const Form = () => {
         className="lead-gen__btn"
         role="button"
         onClick={handleSubmit(onSubmit)}
-        type="submit"
       >
         <span className="lead-gen__btn--text-size-16">
           CLAIM YOUR FREE TRIAL
