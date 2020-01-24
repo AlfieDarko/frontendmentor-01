@@ -125,6 +125,7 @@ const Form = () => {
       <p className="lead-gen__small-print">
         By clicking the button you are agreeing to our
         <span className="lead-gen__small-print--important">
+          {" "}
           Terms and Services
         </span>
       </p>

@@ -8,7 +8,7 @@ import Offer from "./offer";
 
 const Main = () => (
   <div className="container">
-    <Copy header={COPY_HEADER} paragraph={COPY_PARAGRAPH} />
+    <Copy header={COPY_HEADER} content={COPY_PARAGRAPH} />
     <div className="lead-gen__container">
       <Offer freeTrialInDays={7} subscriptionPrice={20} currencySymbol={"£"} />
       <Form />
