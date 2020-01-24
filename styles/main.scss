@@ -7,9 +7,14 @@ body {
   // so it makes it easier to calculate REM units.
   font-size: 10px;
   -webkit-text-size-adjust: none;
+
   font-family: "Poppins", sans-serif;
   background-color: rgb(255, 122, 122);
   background-image: url("/bg-intro-desktop.png");
+
+  @media only screen and (max-width: 500px) {
+    font-size: 5px;
+  }
 }
 
 // mobile first approach
